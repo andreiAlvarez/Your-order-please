@@ -8,3 +8,6 @@ for( let i = 0; i < arrOne.length; i++ ) {
 } return answer.join(' ')
 };
 
+// solution 2
+
+const order = words => words.split(' ').sort((a, b) => a.match(/\d/) - b.match(/\d/)).join(' ');
